@@ -1,0 +1,426 @@
+➜  setops-bench  /home/omer/.local/bin/setops-bench-exe             
+benchmarking Set/Sets with size 10^0
+time                 49.92 ns   (49.74 ns .. 50.18 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 50.20 ns   (50.01 ns .. 50.44 ns)
+std dev              699.3 ps   (586.1 ps .. 900.3 ps)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking Set/Sets with size 10^1
+time                 565.5 ns   (563.4 ns .. 567.6 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 565.7 ns   (564.0 ns .. 568.0 ns)
+std dev              6.037 ns   (5.071 ns .. 7.160 ns)
+
+benchmarking Set/Sets with size 10^2
+time                 2.989 μs   (2.975 μs .. 3.003 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.989 μs   (2.979 μs .. 2.997 μs)
+std dev              31.91 ns   (28.45 ns .. 36.13 ns)
+
+benchmarking Set/Sets with size 10^3
+time                 18.95 μs   (18.90 μs .. 19.01 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 19.02 μs   (18.97 μs .. 19.09 μs)
+std dev              184.9 ns   (165.7 ns .. 205.8 ns)
+
+benchmarking Set/Sets with size 10^4
+time                 171.9 μs   (170.5 μs .. 173.1 μs)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 170.0 μs   (169.3 μs .. 171.0 μs)
+std dev              2.851 μs   (2.258 μs .. 3.432 μs)
+
+benchmarking Set/Sets with size 10^5
+time                 1.954 ms   (1.929 ms .. 1.974 ms)
+                     0.996 R²   (0.993 R² .. 0.998 R²)
+mean                 2.161 ms   (2.115 ms .. 2.205 ms)
+std dev              160.6 μs   (153.6 μs .. 168.9 μs)
+variance introduced by outliers: 55% (severely inflated)
+
+benchmarking Set/Sets with size 10^6
+time                 20.74 ms   (20.44 ms .. 21.22 ms)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 20.47 ms   (20.36 ms .. 20.64 ms)
+std dev              310.4 μs   (174.1 μs .. 522.7 μs)
+
+benchmarking IntSet/Sets with size 10^0
+time                 9.743 ns   (9.697 ns .. 9.789 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 9.786 ns   (9.752 ns .. 9.823 ns)
+std dev              118.8 ps   (98.85 ps .. 174.5 ps)
+variance introduced by outliers: 14% (moderately inflated)
+
+benchmarking IntSet/Sets with size 10^1
+time                 9.707 ns   (9.671 ns .. 9.757 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 9.712 ns   (9.681 ns .. 9.754 ns)
+std dev              120.2 ps   (88.94 ps .. 181.5 ps)
+variance introduced by outliers: 15% (moderately inflated)
+
+benchmarking IntSet/Sets with size 10^2
+time                 20.51 ns   (20.36 ns .. 20.64 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 20.29 ns   (20.21 ns .. 20.39 ns)
+std dev              305.2 ps   (245.6 ps .. 372.4 ps)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking IntSet/Sets with size 10^3
+time                 34.33 ns   (34.20 ns .. 34.48 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 34.42 ns   (34.32 ns .. 34.55 ns)
+std dev              389.1 ps   (309.0 ps .. 571.2 ps)
+variance introduced by outliers: 11% (moderately inflated)
+
+benchmarking IntSet/Sets with size 10^4
+time                 55.60 ns   (55.48 ns .. 55.72 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 55.79 ns   (55.67 ns .. 55.97 ns)
+std dev              474.7 ps   (383.3 ps .. 552.7 ps)
+
+benchmarking IntSet/Sets with size 10^5
+time                 74.18 ns   (73.57 ns .. 74.92 ns)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 74.01 ns   (73.66 ns .. 74.79 ns)
+std dev              1.760 ns   (865.2 ps .. 3.452 ns)
+variance introduced by outliers: 35% (moderately inflated)
+
+benchmarking IntSet/Sets with size 10^6
+time                 89.56 ns   (89.36 ns .. 89.75 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 89.56 ns   (89.43 ns .. 89.73 ns)
+std dev              497.0 ps   (417.8 ps .. 610.9 ps)
+
+benchmarking List set/Sets with size 10^0
+time                 47.04 ns   (46.88 ns .. 47.23 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 47.06 ns   (46.97 ns .. 47.15 ns)
+std dev              327.7 ps   (282.7 ps .. 384.9 ps)
+
+benchmarking List set/Sets with size 10^1
+time                 1.455 μs   (1.449 μs .. 1.461 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 1.450 μs   (1.445 μs .. 1.455 μs)
+std dev              17.20 ns   (14.30 ns .. 20.35 ns)
+
+benchmarking List set/Sets with size 10^2
+time                 123.5 μs   (122.9 μs .. 124.0 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 121.9 μs   (121.4 μs .. 122.5 μs)
+std dev              1.835 μs   (1.628 μs .. 2.110 μs)
+
+benchmarking List set/Sets with size 10^3
+time                 24.08 ms   (23.88 ms .. 24.33 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 24.51 ms   (24.32 ms .. 24.87 ms)
+std dev              554.5 μs   (356.3 μs .. 851.2 μs)
+
+benchmarking List set/Sets with size 10^4
+time                 7.680 s    (7.634 s .. 7.717 s)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 7.652 s    (7.635 s .. 7.663 s)
+std dev              16.87 ms   (0.0 s .. 19.47 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking Set - fromList/S.fromList for size 10^0
+time                 15.52 ns   (15.47 ns .. 15.56 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 15.49 ns   (15.45 ns .. 15.54 ns)
+std dev              155.4 ps   (133.8 ps .. 184.6 ps)
+
+benchmarking Set - fromList/S.fromList for size 10^1
+time                 187.3 ns   (186.6 ns .. 188.0 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 187.0 ns   (186.4 ns .. 187.6 ns)
+std dev              2.039 ns   (1.755 ns .. 2.942 ns)
+
+benchmarking Set - fromList/S.fromList for size 10^2
+time                 1.987 μs   (1.973 μs .. 2.001 μs)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 1.977 μs   (1.964 μs .. 1.992 μs)
+std dev              47.61 ns   (38.83 ns .. 67.28 ns)
+variance introduced by outliers: 30% (moderately inflated)
+
+benchmarking Set - fromList/S.fromList for size 10^3
+time                 23.41 μs   (23.21 μs .. 23.60 μs)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 23.46 μs   (23.28 μs .. 23.65 μs)
+std dev              670.3 ns   (548.6 ns .. 837.2 ns)
+variance introduced by outliers: 31% (moderately inflated)
+
+benchmarking Set - fromList/S.fromList for size 10^4
+time                 395.0 μs   (391.1 μs .. 398.6 μs)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 396.6 μs   (394.1 μs .. 399.0 μs)
+std dev              8.178 μs   (6.812 μs .. 10.03 μs)
+variance introduced by outliers: 13% (moderately inflated)
+
+benchmarking Set - fromList/S.fromList for size 10^5
+time                 11.97 ms   (11.86 ms .. 12.09 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 11.92 ms   (11.79 ms .. 12.05 ms)
+std dev              327.5 μs   (196.9 μs .. 487.9 μs)
+
+benchmarking Set - fromList/S.fromList for size 10^6
+time                 135.6 ms   (114.8 ms .. 145.4 ms)
+                     0.986 R²   (0.952 R² .. 1.000 R²)
+mean                 142.5 ms   (135.1 ms .. 149.3 ms)
+std dev              9.232 ms   (5.978 ms .. 15.77 ms)
+variance introduced by outliers: 13% (moderately inflated)
+
+benchmarking IntSet - fromList/IS.fromList for size 10^0
+time                 11.52 ns   (11.50 ns .. 11.55 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 11.51 ns   (11.48 ns .. 11.55 ns)
+std dev              103.1 ps   (88.16 ps .. 118.5 ps)
+
+benchmarking IntSet - fromList/IS.fromList for size 10^1
+time                 61.17 ns   (60.91 ns .. 61.45 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 61.15 ns   (60.96 ns .. 61.38 ns)
+std dev              688.2 ps   (578.2 ps .. 826.9 ps)
+variance introduced by outliers: 11% (moderately inflated)
+
+benchmarking IntSet - fromList/IS.fromList for size 10^2
+time                 749.1 ns   (737.1 ns .. 758.8 ns)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 737.8 ns   (734.2 ns .. 743.0 ns)
+std dev              14.48 ns   (10.14 ns .. 19.98 ns)
+variance introduced by outliers: 23% (moderately inflated)
+
+benchmarking IntSet - fromList/IS.fromList for size 10^3
+time                 14.98 μs   (14.93 μs .. 15.03 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 14.99 μs   (14.91 μs .. 15.09 μs)
+std dev              294.9 ns   (196.9 ns .. 423.4 ns)
+variance introduced by outliers: 18% (moderately inflated)
+
+benchmarking IntSet - fromList/IS.fromList for size 10^4
+time                 245.1 μs   (243.9 μs .. 246.3 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 243.6 μs   (242.1 μs .. 244.9 μs)
+std dev              4.871 μs   (3.938 μs .. 6.033 μs)
+variance introduced by outliers: 12% (moderately inflated)
+
+benchmarking IntSet - fromList/IS.fromList for size 10^5
+time                 3.275 ms   (3.248 ms .. 3.300 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 3.297 ms   (3.276 ms .. 3.329 ms)
+std dev              83.32 μs   (59.40 μs .. 133.9 μs)
+
+benchmarking IntSet - fromList/IS.fromList for size 10^6
+time                 44.03 ms   (43.10 ms .. 45.33 ms)
+                     0.998 R²   (0.994 R² .. 0.999 R²)
+mean                 42.90 ms   (42.34 ms .. 43.63 ms)
+std dev              1.222 ms   (893.4 μs .. 1.774 ms)
+
+benchmarking List set - nub/nub for size 10^0
+time                 20.85 ns   (20.77 ns .. 20.95 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 20.92 ns   (20.85 ns .. 20.99 ns)
+std dev              227.1 ps   (205.0 ps .. 253.8 ps)
+variance introduced by outliers: 11% (moderately inflated)
+
+benchmarking List set - nub/nub for size 10^1
+time                 372.9 ns   (369.4 ns .. 376.6 ns)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 369.7 ns   (367.8 ns .. 372.8 ns)
+std dev              8.785 ns   (6.523 ns .. 12.56 ns)
+variance introduced by outliers: 32% (moderately inflated)
+
+benchmarking List set - nub/nub for size 10^2
+time                 25.15 μs   (25.08 μs .. 25.22 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 25.16 μs   (25.08 μs .. 25.24 μs)
+std dev              265.5 ns   (209.5 ns .. 342.3 ns)
+
+benchmarking List set - nub/nub for size 10^3
+time                 2.409 ms   (2.397 ms .. 2.420 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 2.455 ms   (2.447 ms .. 2.464 ms)
+std dev              26.86 μs   (25.24 μs .. 29.76 μs)
+
+benchmarking List set - nub/nub for size 10^4
+time                 240.3 ms   (222.3 ms .. 252.4 ms)
+                     0.998 R²   (0.996 R² .. 1.000 R²)
+mean                 246.3 ms   (244.8 ms .. 247.8 ms)
+std dev              1.683 ms   (808.3 μs .. 2.362 ms)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking Set - fromSet and union/S.fromList for size 10^0
+time                 19.87 ns   (19.80 ns .. 19.95 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 19.90 ns   (19.85 ns .. 19.95 ns)
+std dev              186.7 ps   (164.5 ps .. 206.8 ps)
+
+benchmarking Set - fromSet and union/S.fromList for size 10^1
+time                 983.0 ns   (980.0 ns .. 986.1 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 989.4 ns   (985.5 ns .. 994.3 ns)
+std dev              14.70 ns   (11.58 ns .. 17.57 ns)
+variance introduced by outliers: 14% (moderately inflated)
+
+benchmarking Set - fromSet and union/S.fromList for size 10^2
+time                 6.923 μs   (6.896 μs .. 6.949 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 6.953 μs   (6.930 μs .. 6.977 μs)
+std dev              82.95 ns   (71.30 ns .. 104.2 ns)
+
+benchmarking Set - fromSet and union/S.fromList for size 10^3
+time                 76.33 μs   (76.04 μs .. 76.71 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 76.35 μs   (76.11 μs .. 76.64 μs)
+std dev              861.5 ns   (734.7 ns .. 1.034 μs)
+
+benchmarking Set - fromSet and union/S.fromList for size 10^4
+time                 2.008 ms   (1.987 ms .. 2.029 ms)
+                     0.999 R²   (0.998 R² .. 0.999 R²)
+mean                 2.032 ms   (2.014 ms .. 2.060 ms)
+std dev              78.22 μs   (61.21 μs .. 100.4 μs)
+variance introduced by outliers: 23% (moderately inflated)
+
+benchmarking Set - fromSet and union/S.fromList for size 10^5
+time                 31.63 ms   (30.89 ms .. 32.20 ms)
+                     0.998 R²   (0.996 R² .. 0.999 R²)
+mean                 32.06 ms   (31.56 ms .. 32.64 ms)
+std dev              1.073 ms   (727.6 μs .. 1.562 ms)
+variance introduced by outliers: 11% (moderately inflated)
+
+benchmarking Set - fromSet and union/S.fromList for size 10^6
+time                 342.5 ms   (217.1 ms .. 512.2 ms)
+                     0.973 R²   (0.924 R² .. 1.000 R²)
+mean                 370.9 ms   (347.8 ms .. 389.2 ms)
+std dev              28.39 ms   (0.0 s .. 31.65 ms)
+variance introduced by outliers: 21% (moderately inflated)
+
+benchmarking IntSet - fromSet and union/IS.fromList for size 10^0
+time                 5.470 ns   (5.451 ns .. 5.491 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 5.481 ns   (5.463 ns .. 5.499 ns)
+std dev              58.58 ps   (51.60 ps .. 73.06 ps)
+variance introduced by outliers: 12% (moderately inflated)
+
+benchmarking IntSet - fromSet and union/IS.fromList for size 10^1
+time                 260.0 ns   (259.3 ns .. 260.6 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 260.1 ns   (259.4 ns .. 260.7 ns)
+std dev              2.346 ns   (1.934 ns .. 2.796 ns)
+
+benchmarking IntSet - fromSet and union/IS.fromList for size 10^2
+time                 2.763 μs   (2.750 μs .. 2.775 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.758 μs   (2.750 μs .. 2.767 μs)
+std dev              31.33 ns   (28.02 ns .. 35.76 ns)
+
+benchmarking IntSet - fromSet and union/IS.fromList for size 10^3
+time                 45.56 μs   (45.43 μs .. 45.74 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 45.66 μs   (45.52 μs .. 45.81 μs)
+std dev              493.0 ns   (413.2 ns .. 586.9 ns)
+
+benchmarking IntSet - fromSet and union/IS.fromList for size 10^4
+time                 618.5 μs   (613.8 μs .. 622.5 μs)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 617.5 μs   (615.1 μs .. 619.9 μs)
+std dev              8.168 μs   (7.089 μs .. 9.736 μs)
+
+benchmarking IntSet - fromSet and union/IS.fromList for size 10^5
+time                 7.688 ms   (7.611 ms .. 7.767 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 7.853 ms   (7.801 ms .. 7.929 ms)
+std dev              190.3 μs   (155.4 μs .. 233.8 μs)
+
+benchmarking IntSet - fromSet and union/IS.fromList for size 10^6
+time                 94.55 ms   (92.70 ms .. 96.55 ms)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 98.58 ms   (96.63 ms .. 102.6 ms)
+std dev              3.708 ms   (215.0 μs .. 4.796 ms)
+
+benchmarking List union via Set/Build Set, take union, return list back, 10^0
+time                 67.34 ns   (66.97 ns .. 67.79 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 67.66 ns   (67.38 ns .. 67.93 ns)
+std dev              936.0 ps   (797.1 ps .. 1.129 ns)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking List union via Set/Build Set, take union, return list back, 10^1
+time                 804.8 ns   (802.9 ns .. 807.2 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 806.2 ns   (803.8 ns .. 808.3 ns)
+std dev              7.789 ns   (6.901 ns .. 8.785 ns)
+
+benchmarking List union via Set/Build Set, take union, return list back, 10^2
+time                 5.031 μs   (5.010 μs .. 5.050 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 5.003 μs   (4.988 μs .. 5.021 μs)
+std dev              51.85 ns   (44.51 ns .. 59.74 ns)
+
+benchmarking List union via Set/Build Set, take union, return list back, 10^3
+time                 45.11 μs   (44.94 μs .. 45.29 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 45.21 μs   (45.07 μs .. 45.39 μs)
+std dev              566.6 ns   (455.6 ns .. 799.9 ns)
+
+benchmarking List union via Set/Build Set, take union, return list back, 10^4
+time                 1.110 ms   (1.102 ms .. 1.118 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 1.145 ms   (1.136 ms .. 1.156 ms)
+std dev              32.91 μs   (28.07 μs .. 42.11 μs)
+variance introduced by outliers: 17% (moderately inflated)
+
+benchmarking List union via Set/Build Set, take union, return list back, 10^5
+time                 18.95 ms   (18.57 ms .. 19.29 ms)
+                     0.999 R²   (0.997 R² .. 0.999 R²)
+mean                 19.57 ms   (19.31 ms .. 19.93 ms)
+std dev              722.3 μs   (509.0 μs .. 932.0 μs)
+variance introduced by outliers: 13% (moderately inflated)
+
+benchmarking List union via Set/Build Set, take union, return list back, 10^6
+time                 204.4 ms   (196.6 ms .. 212.4 ms)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 205.8 ms   (202.2 ms .. 207.2 ms)
+std dev              2.717 ms   (902.3 μs .. 3.694 ms)
+variance introduced by outliers: 14% (moderately inflated)
+
+benchmarking List union via IntSet/Build IntSet, take union, return list back, 10^0
+time                 41.25 ns   (41.10 ns .. 41.37 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 41.24 ns   (41.12 ns .. 41.35 ns)
+std dev              398.0 ps   (314.8 ps .. 481.0 ps)
+
+benchmarking List union via IntSet/Build IntSet, take union, return list back, 10^1
+time                 204.8 ns   (204.1 ns .. 205.6 ns)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 204.8 ns   (204.1 ns .. 205.3 ns)
+std dev              2.038 ns   (1.733 ns .. 2.354 ns)
+
+benchmarking List union via IntSet/Build IntSet, take union, return list back, 10^2
+time                 2.153 μs   (2.142 μs .. 2.165 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 2.156 μs   (2.145 μs .. 2.168 μs)
+std dev              38.64 ns   (30.39 ns .. 48.85 ns)
+variance introduced by outliers: 18% (moderately inflated)
+
+benchmarking List union via IntSet/Build IntSet, take union, return list back, 10^3
+time                 31.06 μs   (30.91 μs .. 31.24 μs)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 31.23 μs   (31.13 μs .. 31.37 μs)
+std dev              411.1 ns   (327.1 ns .. 535.7 ns)
+
+benchmarking List union via IntSet/Build IntSet, take union, return list back, 10^4
+time                 417.8 μs   (415.0 μs .. 420.6 μs)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 418.0 μs   (416.1 μs .. 419.9 μs)
+std dev              6.521 μs   (5.176 μs .. 9.724 μs)
+
+benchmarking List union via IntSet/Build IntSet, take union, return list back, 10^5
+time                 10.50 ms   (10.34 ms .. 10.66 ms)
+                     0.999 R²   (0.998 R² .. 1.000 R²)
+mean                 10.39 ms   (10.32 ms .. 10.45 ms)
+std dev              189.5 μs   (155.1 μs .. 240.2 μs)
+
+benchmarking List union via IntSet/Build IntSet, take union, return list back, 10^6
+time                 136.0 ms   (133.5 ms .. 137.9 ms)
+                     0.999 R²   (0.997 R² .. 1.000 R²)
+mean                 134.7 ms   (133.1 ms .. 136.4 ms)
+std dev              2.522 ms   (1.726 ms .. 3.355 ms)
+variance introduced by outliers: 11% (moderately inflated)
