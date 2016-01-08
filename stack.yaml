@@ -1,5 +1,6 @@
 flags: {}
 packages:
 - '.'
+- hacked-up/containers
 extra-deps: []
 resolver: lts-3.13

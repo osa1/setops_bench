@@ -18,7 +18,7 @@ library
 
   build-depends:
     base >= 4.7 && < 5,
-    containers
+    containers == 0.6.0.0
 
   default-language:    Haskell2010
 
@@ -28,9 +28,11 @@ executable setops-bench-exe
   ghc-options:         -Wall -threaded -O2
   build-depends:
     base,
-    containers,
+    containers == 0.6.0.0,
     criterion,
     setops-bench
+
+  default-language:    Haskell2010
 
 executable process-csv
   hs-source-dirs:      csv

@@ -3,10 +3,10 @@ module Main (main) where
 --------------------------------------------------------------------------------
 
 import           Control.Monad
-import qualified Data.IntSet       as IS
-import           Data.List         (intersect, nub, union, (\\))
-import qualified Data.Map          as M
-import qualified Data.Set          as S
+import qualified Data.IntSet    as IS
+import           Data.List      (intersect, nub, union, (\\))
+import qualified Data.Set       as S
+import qualified Data.StringSet as SS
 
 import           Criterion.Main
 
@@ -15,7 +15,7 @@ import           Lib
 --------------------------------------------------------------------------------
 
 main :: IO ()
-main = defaultMain [ unionBench, intersectionBench, lookupBench ]
+main = defaultMain [ unionBench, intersectionBench, lookupBench, setVsStringSet ]
 
 --------------------------------------------------------------------------------
 -- Benchmarks
@@ -109,3 +109,38 @@ lookupBench =
       bgroup "List_via_IntSet" $ flip map [ 0 .. 6 ] $ \i ->
         env (return (let (set1, _) = mkListSets i in (set1, length set1))) $ \ ~(set, size) ->
           bench (show i) (nf (IS.member (size `div` 2)) (IS.fromList set))
+
+setVsStringSet :: Benchmark
+setVsStringSet =
+    bgroup "set_vs_string_set" [ union_set, union_stringset, inter_set, inter_stringset,
+                                 lookup_set, lookup_stringset ]
+  where
+    union_set =
+      bgroup "Union_Set" $ flip map [ 0 .. 6 ] $ \i ->
+        env (return (mkStringGenericSets i)) $ \ ~(set1, set2) ->
+          bench (show i) (nf (S.union set1) set2)
+
+    union_stringset =
+      bgroup "Union_StringSet" $ flip map [ 0 .. 6 ] $ \i ->
+        env (return (mkStringSets i)) $ \ ~(set1, set2) ->
+          bench (show i) (nf (SS.union set1) set2)
+
+    inter_set =
+      bgroup "Intersection_Set" $ flip map [ 0 .. 6 ] $ \i ->
+        env (return (mkStringGenericSets i)) $ \ ~(set1, set2) ->
+          bench (show i) (nf (S.intersection set1) set2)
+
+    inter_stringset =
+      bgroup "Intersection_StringSet" $ flip map [ 0 .. 6 ] $ \i ->
+        env (return (mkStringSets i)) $ \ ~(set1, set2) ->
+          bench (show i) (nf (SS.intersection set1) set2)
+
+    lookup_set =
+      bgroup "Lookup_Set" $ flip map [ 0 :: Int .. 6 ] $ \i ->
+        env (return (mkStringGenericSet i)) $ \ set ->
+          bench (show i) (nf (S.member (show (((10 ^ i) :: Int) `div` 2))) set)
+
+    lookup_stringset =
+      bgroup "Lookup_StringSet" $ flip map [ 0 :: Int .. 6 ] $ \i ->
+        env (return (mkStringSet i)) $ \ set ->
+          bench (show i) (nf (SS.member (show (((10 ^ i) :: Int) `div` 2))) set)
