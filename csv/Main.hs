@@ -120,7 +120,7 @@ mkGplFile bench_name line_names x_label y_label (range_start, range_end) =
   unlines
     [ "#!/usr/bin/env gnuplot"
     , ""
-    , "set title \"Length\""
+    , "set title " ++ show bench_name
     , ""
     , "set terminal pdfcairo font \"Gill Sans,6\" linewidth 3 rounded dashed size 4in,3in"
     , "set output \"" ++ bench_name ++ ".pdf\""
