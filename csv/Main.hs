@@ -5,13 +5,10 @@ module Main where
 --------------------------------------------------------------------------------
 
 import           Control.Monad
-import           Data.Bifunctor     (second)
 import           Data.Char          (isDigit)
-import           Data.List          (intercalate, isPrefixOf, partition, sortOn,
-                                     span)
+import           Data.List          (intercalate, isPrefixOf, partition, sortOn)
 import           Data.List.Split    (splitOn)
 import           Data.Maybe         (fromMaybe)
-import qualified Data.Set           as S
 import           Safe               (readMay)
 import           System.Directory   (createDirectory, doesDirectoryExist,
                                      getCurrentDirectory, getDirectoryContents)
