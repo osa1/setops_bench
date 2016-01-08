@@ -82,8 +82,8 @@ intersectionBench =
 
 lookupBench :: Benchmark
 lookupBench =
-    bgroup "insertion" [ lookup_set, lookup_intset, lookup_list,
-                         lookup_list_via_set, lookup_list_via_intset ]
+    bgroup "lookup" [ lookup_set, lookup_intset, lookup_list,
+                      lookup_list_via_set, lookup_list_via_intset ]
   where
     lookup_set =
       bgroup "Set" $ flip map [ 0 .. 6 ] $ \i ->
