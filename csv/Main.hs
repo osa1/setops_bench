@@ -11,9 +11,12 @@ import           Data.List.Split    (splitOn)
 import           Data.Maybe         (fromMaybe)
 import           Safe               (readMay)
 import           System.Directory   (createDirectory, doesDirectoryExist,
-                                     getCurrentDirectory, getDirectoryContents)
+                                     getCurrentDirectory, getDirectoryContents,
+                                     setCurrentDirectory)
 import           System.Environment (getArgs)
+import           System.Exit        (ExitCode (..))
 import           System.FilePath    ((<.>), (</>))
+import qualified System.Process     as Proc
 
 import           Debug.Trace
 
@@ -47,6 +50,11 @@ main = do
                               "Size (power of 10)" "Seconds" (0, 6)
       writeFile (dirPath </> pdBenchName b </> pdBenchName b <.> "gpl") gplFile
       writeFile (dirPath </> pdBenchName b </> styleFileName) styleFile
+      putStrLn "Trying to run gnuplot..."
+      setCurrentDirectory (dirPath </> pdBenchName b)
+      callCommand ("gnuplot " ++ pdBenchName b <.> "gpl") >>= \case
+        ExitSuccess -> return ()
+        ExitFailure _ -> putStrLn "Can't run gnuplot."
       putStrLn "Done."
 
 findDir :: FilePath -> FilePath -> IO FilePath
@@ -175,3 +183,10 @@ styleFileName = "common_styles.gnuplot"
 -- | 'zipWith' done right.
 zipWith' :: [a] -> [b] -> (a -> b -> c) -> [c]
 zipWith' as bs f = zipWith f as bs
+
+-- | 'callCommand' done right. I don't understand why that functions is throwing
+-- an exception. (and not documenting what exception it's throwing)
+callCommand :: String -> IO ExitCode
+callCommand cmd = do
+    (_, _, _, p) <- Proc.createProcess (Proc.shell cmd){ Proc.delegate_ctlc = True }
+    Proc.waitForProcess p

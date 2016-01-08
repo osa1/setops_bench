@@ -42,6 +42,7 @@ executable process-csv
     deepseq,
     directory,
     filepath,
+    process,
     safe,
     split,
     vector
